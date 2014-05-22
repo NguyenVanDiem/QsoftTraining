@@ -7,7 +7,6 @@
 //
 
 #import "QSProjectsListService.h"
-
 @implementation QSProjectsListService
 
 @end

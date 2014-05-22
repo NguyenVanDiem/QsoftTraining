@@ -7,10 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-@class QSProjectModel;
 
 @interface QSProjectsListService : NSObject
 
-- (NSArray *)getProjectsModel;
 
 @end

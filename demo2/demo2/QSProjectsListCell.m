@@ -7,6 +7,7 @@
 //
 
 #import "QSProjectsListCell.h"
+#import "QSProjectModel.h"
 
 @implementation QSProjectsListCell
 
@@ -20,6 +21,16 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)setModel:(QSProjectModel *)model
+{
+    _model = model;
+    [self.nameLabel setText:_model.name];
+    [self.startDateLabel setText:_model.startDate];
+    [self.endDateLabel setText:_model.endDate];
+    [self.statusLabel setText:_model.status];
+    
 }
 
 @end

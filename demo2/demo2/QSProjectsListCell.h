@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class QSProjectModel;
 
 @interface QSProjectsListCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
@@ -14,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *startDateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *endDateLabel;
 
+@property (nonatomic, strong) QSProjectModel * model;
 
 @end
